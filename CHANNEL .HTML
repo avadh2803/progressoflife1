@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Progress of Life - YouTube Channel</title>
+    <style>
+        /* Overall Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-size: 1.5em;
+            color: #555;
+            text-align: center;
+            margin: 20px 0;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            font-style: normal; /* Changed from italic to normal */
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        /* Social Links Styling */
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #1e90ff;
+            font-size: 1.2em;
+        }
+
+        .social-links a:hover {
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 1em;
+            }
+
+            header img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://yt3.ggpht.com/1ajqLfkEgZAZB9Jsh8GHRxiBBk4GkJcKXhZ8uCLY2aUIHOp7Y4iessnX-V9W-KixexVsYLk6=s176-c-k-c0x00ffffff-no-rj" alt="Progress of Life Logo">
+        <h1>Progress of Life</h1>
+        <p>Motivation | Life Lessons | Self Improvement</p>
+    </header>
+    
+    <nav>
+        <a href="#home" onclick="showTab('home')">Home</a>
+        <a href="#about" onclick="showTab('about')">About</a>
+        <a href="#contact" onclick="showTab('contact')">Contact</a>
+        <a href="#services" onclick="showTab('services')">Services</a>
+    </nav>
+    
+    <section id="home" class="container">
+        <h2>Welcome to Progress of Life</h2>
+        <p>On this channel, we aim to inspire and motivate individuals to become the best version of themselves. Explore life-changing lessons and powerful motivational content.</p>
+        
+        <h3>आज का सुविचार</h3>
+        <div class="quote">
+            <p>“जीवन में सबसे बड़ा उपहार जीवन जीने का तरीका है।”</p>
+            <p>“सफलता की कुंजी है, अपनी गलतियों से सीखते हुए आगे बढ़ते रहना।”</p>
+            <p>“हर दिन एक नई शुरुआत है, जो तुम्हें पहले से बेहतर बनने का अवसर देती है।”</p>
+        </div>
+    </section>
+    
+    <section id="about" class="container about" style="display: none;">
+        <h2>About Progress of Life</h2>
+        <p>Progress of Life is a YouTube channel dedicated to personal growth, self-improvement, and achieving success in life. Our mission is to provide you with the best motivational content that pushes you to achieve your goals. Whether it's overcoming obstacles, learning new skills, or simply staying positive, we've got you covered.</p>
+    </section>
+    
+    <section id="contact" class="container" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Follow us on:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/@Progressoflife" target="_blank">YouTube</a></li>
+            <li><a href="https://www.instagram.com/progressoflife1/?igsh=MTRxd3Y3ZTV0OGJ4Nw%3D%3D" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+    
+    <section id="services" class="container" style="display: none;">
+        <h2>Our Services</h2>
+        <p>At Progress of Life, we offer motivational speaking, personal development coaching, and life skills programs that are designed to help you unlock your full potential. Whether you're looking to improve your mindset, build resilience, or achieve specific life goals, we are here to guide you.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Progress of Life. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@Progressoflife" target="_blank">YouTube</a> | 
+            <a href="https://www.instagram.com/progressoflife1/?igsh=MTRxd3Y3ZTV0OGJ4Nw%3D%3D" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Show the selected tab
+            document.getElementById(tabId).style.display = 'block';
+        }
+        // Show home tab by default on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            showTab('home');
+        });
+    </script>
+</body>
+</html>
